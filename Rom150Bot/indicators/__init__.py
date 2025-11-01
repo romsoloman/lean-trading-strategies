@@ -1,0 +1,1 @@
+[{"text": "\"\"\"Indicator management module.\"\"\"\nfrom .manager import IndicatorManager\n\n__all__ = ['IndicatorManager']\n", "type": "text"}]
