@@ -1,0 +1,1 @@
+[{"text": "\"\"\"Risk management module.\"\"\"\nfrom .position_sizer import PositionSizer\nfrom .stop_manager import StopLossManager, TrailingStopManager\n\n__all__ = ['PositionSizer', 'StopLossManager', 'TrailingStopManager']\n", "type": "text"}]
