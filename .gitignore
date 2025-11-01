@@ -1,0 +1,52 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints
+
+# LEAN specific
+storage/
+.vscode/
+.idea/
+
+# Backtests (keep structure but ignore results)
+Rom150Bot/backtests/*/
+!Rom150Bot/backtests/.gitkeep
+
+# Data files (too large for git)
+data/equity/**/*.zip
+data/equity/**/coarse/*.csv
+data/equity/**/fine/
+
+# Keep structure files
+!data/market-hours/
+!data/symbol-properties/
+!data/equity/**/factor_files/
+!data/equity/**/map_files/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log

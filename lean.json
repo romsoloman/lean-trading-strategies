@@ -1,0 +1,8 @@
+{
+    "data-folder": "data",
+    "organization-id": "local-offline-org",
+    "job-organization-id": "local-offline-org",
+    "file-database-last-update": "11/01/2025 11:19:07",
+    "data-provider": "QuantConnect.Lean.Engine.DataFeeds.DefaultDataProvider",
+    "id": "Local"
+}

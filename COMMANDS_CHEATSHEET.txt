@@ -1,0 +1,68 @@
+╔═══════════════════════════════════════════════════════════════════════════╗
+║                   LEAN CLI OFFLINE - COMMAND CHEATSHEET                   ║
+╚═══════════════════════════════════════════════════════════════════════════╝
+
+🚀 RUNNING BACKTESTS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   # Standard backtest (no Docker update check)
+   lean backtest Rom150Bot --no-update
+
+   # With custom output directory
+   lean backtest Rom150Bot --output Rom150Bot/results --no-update
+
+   # Force pull latest image before backtest
+   lean backtest Rom150Bot --update
+
+🐛 DEBUGGING
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   # PyCharm
+   lean backtest Rom150Bot --debug pycharm
+
+   # VS Code (DebugPy)
+   lean backtest Rom150Bot --debug debugpy
+
+📊 RESEARCH
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   # Start Jupyter Lab
+   lean research Rom150Bot
+
+   # With custom port
+   lean research Rom150Bot --port 8889
+
+⚙️  CONFIGURATION
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   # List all configuration
+   lean config list
+
+   # Set default language
+   lean config set default-language python
+
+   # Set engine image
+   lean config set engine-image quantconnect/lean:latest
+
+📈 DATA MANAGEMENT
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   # Generate random data (for testing)
+   lean data generate \
+       --start 20200101 \
+       --end 20231231 \
+       --symbol-count 10 \
+       --resolution Daily
+
+🐳 DOCKER COMMANDS
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   # Pull LEAN engine image
+   docker pull quantconnect/lean:latest
+
+   # List LEAN images
+   docker images | grep quantconnect/lean
+
+   # List running containers
+   docker ps
+
+📞 RESOURCES
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+   LEAN Docs:     https://www.lean.io/docs/
+   Algorithms:    https://www.quantconnect.com/docs/v2/writing-algorithms
+   GitHub:        https://github.com/QuantConnect/Lean
+
