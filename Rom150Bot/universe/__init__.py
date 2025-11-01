@@ -1,0 +1,1 @@
+[{"text": "\"\"\"Universe selection module.\"\"\"\nfrom .selector import UniverseSelector\n\n__all__ = ['UniverseSelector']\n", "type": "text"}]
